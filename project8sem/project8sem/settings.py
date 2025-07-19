@@ -137,9 +137,7 @@ import os
 
 STATIC_URL = 'static/'
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR,"static"),
-]
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
@@ -156,3 +154,5 @@ EMAIL_USE_TLS = True
 
 # Set session to expire when the browser is closed
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
